@@ -8,6 +8,7 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+    base: process.env.VITE_BASE_PATH || "/X-APP/tree/main/web",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
