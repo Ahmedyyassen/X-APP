@@ -4,7 +4,7 @@ const cookieOption = {
     expires: ONE_DAY(),
     httpOnly: true,
     secure: NODE_ENV === 'production',
-    sameSite: 'lax',
+    sameSite: 'none',
     path: "/",
 };
 export const AuthCookie = (res, token) => {

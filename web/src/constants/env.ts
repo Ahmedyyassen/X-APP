@@ -1,5 +1,5 @@
-export const SERVER_HOST = import.meta.env.MODE === "development" ? "http://localhost:3030" : ""
-
+// export const SERVER_HOST = import.meta.env.MODE === "development" ? "http://localhost:3030" : ""
+export const SERVER_HOST = import.meta.env.VITE_SERVER_HOST
 export const BASE_URL = `${SERVER_HOST}/api`;
 
 export const AUTH_ROUTES = {
